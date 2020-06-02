@@ -1,0 +1,10 @@
+p	{
+	color: gold;
+	background: black;
+	font-style: bold;
+	text-align: center;
+}
+h2	{
+	text-shadow: -5px 5px gainsboro;
+	text-align: right;
+}
