@@ -1,0 +1,248 @@
+/* Body*/
+body {
+	margin: 0%;
+}
+
+/* Navbar */
+.Navbar {
+	overflow: hidden;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+/* Navbar text & hover effect */
+.Navbar a {
+	float: left;
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Avant Garde, Helvetica;
+	font-size: 20px;
+	text-align: center;
+}
+.Navbar a:hover {
+	background-color: #F4F4F4;
+	color: black;
+	font-weight: bold;
+}
+
+/* Navbar home button */
+.Navbar a.active {
+	background-color: darkgray;
+}
+
+/* Video */
+#Typing_Video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	z-index: -1;
+}
+
+/* Text over the video */
+.Video_Text {
+	background: rgba(0,0,0,0.5);
+	color: white;
+	width: 100%;
+	padding: 20px;
+	margin-top: 23%;
+}
+
+/* Table features & hover effects */
+* {
+	box-sizing: border-box;
+}
+.Column_1 {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	padding-top: 3%;
+	height: 400px;
+	background-color: rgb(230, 248, 255);
+	transition: background-color 1s;
+}
+.Column_1:hover {
+	background-color: lightblue;
+	transition: background-color 1s;
+}
+.Column_2 {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	padding-top: 1.9%;
+	height: 400px;
+	background-color: #4d4d4d;
+	transition: background-color 1s;
+}
+.Column_2:hover {
+	background-color: #252525;
+	transition: background-color 1s;
+}
+.Column_3 {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	padding-top: 3.5%;
+	height: 450px;
+	background-color: #4d4d4d;
+	transition: background-color 1s;
+}
+.Column_3:hover {
+	background-color: #252525;
+	transition: background-color 1s;
+}
+.Row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Heading 1 & hover effect */
+h1 {
+	text-transform: uppercase;
+	font-family: "Trebuchet MS", Optima;
+	text-align: center;
+	margin-top: 3%;
+	color: #1a1a1a;
+	cursor: default;
+	transition: transform 1s;
+}
+h1:hover {
+	color: black;
+	font-weight: normal;
+	transition: transform 1s;
+	transform: scale(1.07);
+}
+
+/* Paragraph & hover effect */
+p {
+	font-family: 'Times New Roman', Times, serif;
+	text-align: justify;
+	letter-spacing: 1px;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: default;
+	transition: transform 1s;
+}
+p:hover {
+	color: #00004d;
+	transition: transform 1s;
+	transform: scale(1.01);
+}
+
+/* Center and hover effect for the classes 
+within the video text and GitHub sections 
+(i.e. all <center> sections but the one in 
+footer) */
+.center1 {
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: default;
+	cursor: default;
+	transition: transform 1s;
+}
+.center1:hover {
+	transition: transform 2s;
+	transform: scale(1.07);
+}
+
+/* Anchor */
+a {
+	color: blue;
+}
+
+/* Quotation */
+q {
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* Images & hover effect */
+img {
+	filter: grayscale(75%);
+	border-radius: 8px;
+	max-width: 100%;
+	height: 340px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	z-index: 1;
+	transition: filter .5s, transform .5s;
+}
+img:hover {
+	filter: grayscale(5%);
+	transition: filter .5s, transform 1s;
+	transform: scale(1.2);
+}
+
+/* Contact form */
+input[type=text] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* Submit button & hover effect */
+input[type=submit] {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Times New Roman', Times, serif;
+	transition: background-color .75s, color .75s, transform 1.5s;
+}
+input[type=submit]:hover {
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	transform: scale(1.5);
+	transition: background-color .75s, color .75s, transform 1.5s;
+}
+
+/* Form */
+form {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	font-family: "Trebuchet MS", Optima;
+}
+
+/* Footer */
+footer {
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: default;
+	padding: 2%;
+	background-color: rgb(230, 248, 255);
+	transition: background-color 1s;
+}
+footer:hover {
+	background-color: lightblue;
+	transition: background-color 1s;
+}
