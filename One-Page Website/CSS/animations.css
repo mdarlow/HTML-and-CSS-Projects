@@ -225,12 +225,12 @@
   color: white;
 }
 
-img.demo {
+img.thumb {
   opacity: 0.6;
 }
 
 .active,
-.demo:hover {
+.thumb:hover {
   opacity: 1;
 }
 

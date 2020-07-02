@@ -11,7 +11,7 @@
     <body>
 
     <!-- NAV -->
-      <div class="wrap">
+      <div class="wrap" id="nav">
         <div class="menu-container">
           <ul class="menu">
             <a href="#home"><li>HOME</li></a>
@@ -41,7 +41,7 @@
 
               <!-- PHOTO-CONTAINER 1 -->
                 <div class="photo-container">
-                  <div class="photo" onclick="openModal();currentSlide(1)">
+                  <div class="photo" onclick="openModal();closeNav();currentSlide(1);">
                     <img src="./images/Thumb/Fish/Catfish.png" alt="Catfish" 
                     style="width:100%">
                       <div class="photo-overlay">
@@ -54,7 +54,7 @@
 
               <!-- PHOTO-CONTAINER 2 -->
               <div class="photo-container">
-                  <div class="photo" onclick="openModal();currentSlide(2)">
+                  <div class="photo" onclick="openModal();closeNav();currentSlide(2)">
                     <img src="./images/Thumb/Fish/Danio1.png" alt="Danio" 
                     style="width:100%">
                       <div class="photo-overlay">
@@ -67,7 +67,7 @@
 
               <!-- PHOTO-CONTAINER 3 -->
               <div class="photo-container">
-                  <div class="photo" onclick="openModal();currentSlide(3)">
+                  <div class="photo" onclick="openModal();closeNav();currentSlide(3)">
                     <img src="./images/Thumb/Fish/Goldfish1.png" alt="Goldfish" 
                     style="width:100%">
                       <div class="photo-overlay">
@@ -80,7 +80,7 @@
 
               <!-- PHOTO-CONTAINER 4 -->
               <div class="photo-container">
-                  <div class="photo" onclick="openModal();currentSlide(4)">
+                  <div class="photo" onclick="openModal();closeNav();currentSlide(4)">
                     <img src="./images/Thumb/Fish/Hatchetfish2.png" alt="Hatchetfish" 
                     style="width:100%">
                       <div class="photo-overlay">
@@ -93,7 +93,7 @@
 
               <!-- PHOTO-CONTAINER 5 -->
               <div class="photo-container">
-                  <div class="photo" onclick="openModal();currentSlide(5)">
+                  <div class="photo" onclick="openModal();closeNav();currentSlide(5)">
                     <img src="./images/Thumb/Fish/Loach1.png" alt="Loach" 
                     style="width:100%">
                       <div class="photo-overlay">
@@ -106,7 +106,7 @@
 
               <!-- PHOTO-CONTAINER 6 -->
               <div class="photo-container">
-                  <div class="photo" onclick="openModal();currentSlide(6)">
+                  <div class="photo" onclick="openModal();closeNav();currentSlide(6)">
                     <img src="./images/Thumb/Fish/Minnow1.png" alt="Minnow" 
                     style="width:100%">
                       <div class="photo-overlay">
@@ -119,7 +119,7 @@
 
               <!-- PHOTO-CONTAINER 7 -->
               <div class="photo-container">
-                  <div class="photo" onclick="openModal();currentSlide(7)">
+                  <div class="photo" onclick="openModal();closeNav();currentSlide(7)">
                     <img src="./images/Thumb/Fish/Otocinclus1.png" alt="Otocinclus" 
                     style="width:100%">
                       <div class="photo-overlay">
@@ -132,7 +132,7 @@
 
               <!-- PHOTO-CONTAINER 8 -->
               <div class="photo-container">
-                  <div class="photo" onclick="openModal();currentSlide(8)">
+                  <div class="photo" onclick="openModal();closeNav();currentSlide(8)">
                     <img src="./images/Thumb/Fish/Rasbora1.png" alt="Rasbora" 
                     style="width:100%">
                       <div class="photo-overlay">
@@ -145,7 +145,7 @@
 
               <!-- PHOTO-CONTAINER 9 -->
               <div class="photo-container">
-                  <div class="photo" onclick="openModal();currentSlide(9)">
+                  <div class="photo" onclick="openModal();closeNav();currentSlide(9)">
                     <img src="./images/Thumb/Fish/Swordtail.png" alt="Swordtail" 
                     style="width:100%">
                       <div class="photo-overlay">
@@ -158,7 +158,7 @@
 
               <!-- PHOTO-CONTAINER 10 -->
               <div class="photo-container">
-                  <div class="photo" onclick="openModal();currentSlide(10)">
+                  <div class="photo" onclick="openModal();closeNav();currentSlide(10)">
                     <img src="./images/Thumb/Fish/Tetra1.png" alt="Tetra" 
                     style="width:100%">
                       <div class="photo-overlay">
@@ -174,8 +174,9 @@
       </section>
       <!-- END GALLERY -->
 
+      <!-- MODAL -->
       <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <span class="close cursor" onclick="closeModal();openNav()">&times;</span>
         <div class="modal-content">
       
           <div class="mySlides">
@@ -247,67 +248,67 @@
       
           <!-- Thumbnail nav in modal -->
           <div class="thumbnail-column">
-            <img class="demo cursor" src="Images/Thumb/Fish/Catfish1.png" 
+            <img class="thumb cursor" src="Images/Thumb/Fish/Catfish1.png" 
             style="width:100%" onclick="currentSlide(1)" alt="Corydoras catfish are one of the most popular community 
             fish because of their peaceful and happy personalities as well as their ability to help clean up access food from substrate.<br>
             <a href='https://www.aquariumcarebasics.com/freshwater-aquarium-fish/cory-catfish/' target='_blank'>Click&nbsp;here</a> 
             for information on how to take care of a corydoras catfish.">
           </div>
           <div class="thumbnail-column">
-            <img class="demo cursor" src="Images/Thumb/Fish/Danio1.png" 
+            <img class="thumb cursor" src="Images/Thumb/Fish/Danio1.png" 
             style="width:100%" onclick="currentSlide(2)" alt="Zebra danios are a favorite for new fish-hobbyists because of their natural 
             hardiness and energetic personality. <br><a href='https://www.thesprucepets.com/zebra-danio-1378473' target='_blank'>Click&nbsp;here</a> 
             for information on how to take care of a zebra danio.">
           </div>
           <div class="thumbnail-column">
-            <img class="demo cursor" src="Images/Thumb/Fish/Goldfish1.png" 
+            <img class="thumb cursor" src="Images/Thumb/Fish/Goldfish1.png" 
             style="width:100%" onclick="currentSlide(3)" alt="Goldfish are among the most popular pets in the world, third only to dogs and cats, 
             respectively.<br><a href='https://thegoldfishtank.com/' target='_blank'>Click&nbsp;here</a> 
             for information on how to take care of a goldfish.">
           </div>
           <div class="thumbnail-column">
-            <img class="demo cursor" src="Images/Thumb/Fish/Hatchetfish2.png" 
+            <img class="thumb cursor" src="Images/Thumb/Fish/Hatchetfish2.png" 
             style="width:100%" onclick="currentSlide(4)" alt="Hatchetfish are quite different from other beginner-friendly fish because of their 
             interesting shape and their tendency to stay near the water&#39s surface.
             <br><a href='https://animal-world.com/encyclo/fresh/characins/hatchet.php' target='_blank'>
             Click&nbsp;here</a> for information on how to take care of a hatchetfish.">
           </div>
           <div class="thumbnail-column">
-            <img class="demo cursor" src="Images/Thumb/Fish/Loach1.png" 
+            <img class="thumb cursor" src="Images/Thumb/Fish/Loach1.png" 
             style="width:100%" onclick="currentSlide(5)" alt="Loaches are an attractively designed fish that brings energetic activity to the aquarium tank.
             <br><a href='https://www.fishkeepingworld.com/kuhli-loach/' target='_blank'>
             Click&nbsp;here</a> for information on how to take care of loaches.">
           </div>
           <div class="thumbnail-column">
-            <img class="demo cursor" src="Images/Thumb/Fish/Minnow1.png" 
+            <img class="thumb cursor" src="Images/Thumb/Fish/Minnow1.png" 
             style="width:100%" onclick="currentSlide(6)" alt="Minnows have small scales that reflect a stunning array of colors and they 
-            are as beautiful as they are easy to keep
+            are as beautiful as they are easy to keep.
             <br><a href='https://www.aquariadise.com/caresheet-white-cloud-mountain-minnow/' target='_blank'>Click&nbsp;here</a> 
             for information on how to take care of minnows.">
           </div>
           <div class="thumbnail-column">
-            <img class="demo cursor" src="Images/Thumb/Fish/Otocinclus1.png" 
+            <img class="thumb cursor" src="Images/Thumb/Fish/Otocinclus1.png" 
             style="width:100%" onclick="currentSlide(7)" alt="Otocinclus are well-known for their peaceful personality and help in taking care of any algae issues. 
             <br><a href='https://modestfish.com/otocinclus-care/' target='_blank'>Click&nbsp;here</a> for information on how to take care of otocinclus.">
           </div>
           <div class="thumbnail-column">
-            <img class="demo cursor" src="Images/Thumb/Fish/Rasbora1.png" 
+            <img class="thumb cursor" src="Images/Thumb/Fish/Rasbora1.png" 
             style="width:100%" onclick="currentSlide(8)" alt="Rasboras are happiest and most entertaining when living in a well-planted environment. 
             <br><a href='https://www.thesprucepets.com/harlequin-rasbora-1378462' target='_blank'>Click&nbsp;here</a> for information on how to take care of rasbora.">
           </div>
           <div class="thumbnail-column">
-            <img class="demo cursor" src="Images/Thumb/Fish/Swordtail1.png" 
+            <img class="thumb cursor" src="Images/Thumb/Fish/Swordtail1.png" 
             style="width:100%" onclick="currentSlide(9)" alt="Swordtails bring a burst of energy and their ease of care make them a solid option for any peaceful fish community.
             <br><a href='https://www.aquariadise.com/caresheet-swordtail-xiphophorus-hellerii/' target='_blank'>Click&nbsp;here</a> for information on how to take care of swordtails.">
           </div>
           <div class="thumbnail-column">
-            <img class="demo cursor" src="Images/Thumb/Fish/Tetra1.png" 
+            <img class="thumb cursor" src="Images/Thumb/Fish/Tetra1.png" 
             style="width:100%" onclick="currentSlide(10)" alt="Silver-tipped tetras are a very hardy and colorful fish breed that can thrive in a wide variety of water parameters.
             <br><a href='https://tetra-fish-care.com/silvertip-tetra-hasemania-nana/' target='_blank'>Click&nbsp;here</a> for information on how to take care of silver-tipped tetras.">
           </div>
         </div>
       </div>
-
+      <!-- END MODAL -->
 
 
 		<!-- SUBSCRIPTION -->

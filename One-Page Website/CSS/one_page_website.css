@@ -129,7 +129,7 @@ section {
 
 .wrap {
     height: 100%;
-    width: 100%;
+    width: 50%;
     position: absolute;
     /* This ensures that the images cannot
         render outside of their container
@@ -300,7 +300,7 @@ section {
 
 .terms {
     margin: 30px 1px 0 0 ;
-    margin-top:13%;
+    margin-top: 13%;
     padding-left: 52px;
     font-size: 14px;
     line-height: 5px;
